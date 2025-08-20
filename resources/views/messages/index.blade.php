@@ -20,6 +20,7 @@
                 <div class="text-gray-400 text-xs mt-1">{{ $message->created_at->format('Y-m-d H:i') }}</div>
             </div>
         @endforeach
+        <x-pagination :paginator="$messages" />
     @endif
   </div>
 @endsection
